@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hero Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            color: #2c3e50;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .hero-text a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 80%;
+            max-width: 400px;
+        }
+
+        @media (max-width: 800px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-image {
+                order: -1; 
+            }
+
+            .hero-text h1 {
+                font-size: 28px;
+            }
+
+            .hero-text p {
+                font-size: 16px;
+            }
+
+            .hero-image img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Build Your Future with Technology</h1>
+            <p>
+                Learn web development, build real-world projects, and become a skilled developer.
+            </p>
+            <a href="https://www.youtube.com/@NetNinja">Get Started</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="web.webp" alt="Hero Image">
+        </div>
+
+    </section>
+
+</body>
+</html>
